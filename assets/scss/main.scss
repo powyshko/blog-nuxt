@@ -1,0 +1,170 @@
+@import './_reset.scss';
+@import './_admin.scss';
+
+
+body{
+  background: #f8f8f8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.wrapper {
+  padding: 0px 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+
+.header {
+  width: 100%;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 20px 0px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    color: #000000;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__menu {
+  }
+}
+
+.menu {
+  font-size: 18px;
+
+  &__item {
+    color: #000000;
+    margin: 0px 10px 0px 0px;
+
+    &.nuxt-link-exact-active{
+      color: #4339f2;
+      font-weight: bold;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:last-child{
+      margin: 0;
+    }
+  }
+}
+
+.main-about {
+  text-align: center;
+  padding: 10px 0px 50px 0px;
+
+		&__avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 0px auto 20px;
+
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+		}
+
+		&__title {
+      margin: 0px 0px 20px 0px;
+		}
+
+		&__descr {
+      font-size: 18px;
+      color: #000000;
+      margin: 0px 0px 30px 0px;
+      line-height: 30px;
+		}
+}
+
+.main-posts {
+
+		&__title {
+      margin: 20px 0px 20px 0px;
+		}
+
+   &__link{
+     text-align: center;
+   }
+
+   &__btn{
+     margin: 25px 0px 0px 0px;
+   }
+}
+
+
+.article {
+
+  &__header {
+    width: 100%;
+    height: 540px;
+    position: relative;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      background: rgba($color: #000000, $alpha: .6);
+      border-radius: 10px;
+    }
+  }
+
+  &__header-body{
+    position: relative;
+    z-index: 20;
+    text-align: center;
+  }
+
+  &__title{
+    color: #FFFFFF !important;
+    text-transform: uppercase;
+  }
+
+  &__subject{
+    color: #000000;
+    font-size: 16px;
+    margin: 20px 0px 0px 0px;
+    display: inline-block;
+    background: #E2FBD7;
+    line-height: 20px;
+    padding: 16px 22px 14px 22px;
+    border-radius: 6px;
+  }
+
+  &__body {
+    margin: 30px 0px 0px 0px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+  }
+}
