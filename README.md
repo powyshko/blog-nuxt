@@ -17,4 +17,8 @@ $ npm run start
 $ npm run generate
 ```
 
+Admin
+login: admin@test.ru
+pass: Admin123
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
