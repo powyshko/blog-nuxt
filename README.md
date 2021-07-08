@@ -17,7 +17,9 @@ $ npm run start
 $ npm run generate
 ```
 
-Admin
+
+
+/admin/auth
 login: admin@test.ru
 pass: admin123
 
