@@ -20,12 +20,9 @@ import LeftColumn from "@/components/admin/LeftColumn";
 export default {
   name: "admin",
   components: { LeftColumn },
-  middleware: ["auth"],
   methods: {
     logoutUser() {
-      this.$store.dispatch("logoutUserAdmin").then(() => {
-        console.log("redirect");
-      });
+      this.$store.dispatch("logoutUserAdmin");
     }
   }
 };

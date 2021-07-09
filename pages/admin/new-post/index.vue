@@ -10,6 +10,7 @@ import FormBlog from "@/components/admin/FormBlog";
 
 export default {
   layout: "admin",
+  middleware: ["auth"],
   components: { FormBlog },
   methods: {
     onCancel() {

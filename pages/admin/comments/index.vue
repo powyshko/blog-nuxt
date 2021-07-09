@@ -29,6 +29,7 @@ import TableComments from "@/components/admin/TableComments";
 
 export default {
   layout: "admin",
+  middleware: ["auth"],
   components: { TableComments },
   async asyncData({ $axios }) {
     let comments = [];
