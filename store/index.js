@@ -61,7 +61,6 @@ export const actions = {
       });
   },
   logoutUserAdmin({ commit }) {
-    this.$router.push("/admin/auth");
     Cookies.remove("jwt");
     commit("destroyToken");
   },

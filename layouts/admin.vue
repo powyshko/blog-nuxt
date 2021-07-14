@@ -22,7 +22,9 @@ export default {
   components: { LeftColumn },
   methods: {
     logoutUser() {
-      this.$store.dispatch("logoutUserAdmin");
+      this.$store.dispatch("logoutUserAdmin").then(() => {
+        this.$router.push("/admin/auth");
+      });
     }
   }
 };
